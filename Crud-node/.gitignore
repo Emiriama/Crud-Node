@@ -1,8 +1,0 @@
-# Ignorar dependencias
-node_modules/
-
-# Archivos de entorno
-.env
-
-# Archivos del sistema
-.DS_Store

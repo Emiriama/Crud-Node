@@ -1,25 +1,12 @@
 {
-  "name": "crood-node",
-  "version": "1.0.0",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/Emiriama/Crud-Node.git"
-  },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/Emiriama/Crud-Node/issues"
-  },
-  "homepage": "https://github.com/Emiriama/Crud-Node#readme",
-  "description": "",
   "dependencies": {
-    "body-parser": "^2.2.0",
-    "express": "^5.1.0",
+    "express": "^4.21.2",
     "mysql2": "^3.14.1"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.7"
+  },
+  "scripts": {
+    "start": "nodemon app.js"
   }
 }
