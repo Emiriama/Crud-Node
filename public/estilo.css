@@ -1,0 +1,134 @@
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@500;700&family=Inter:wght@300;400;600&display=swap');
+
+:root {
+  --fondo: #f9f6f2;
+  --marfil: #f7f3ee;
+  --beige: #e9ddd1;
+  --acento: #1e1e1e;
+  --rosado: #dcbfb2;
+  --gris-suave: #b9b1ad;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--fondo);
+  font-family: 'Inter', sans-serif;
+  color: var(--acento);
+  line-height: 1.6;
+}
+
+/* Banner superior */
+.banner {
+  background-color: var(--marfil);
+  padding: 80px 20px;
+  text-align: center;
+  border-bottom: 1px solid var(--gris-suave);
+}
+
+.banner-texto h1 {
+  font-family: 'Cinzel', serif;
+  font-size: 3rem;
+  color: var(--acento);
+  letter-spacing: 2px;
+}
+
+/* Contenedor principal */
+.contenedor {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 60px 20px;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 40px;
+}
+
+/* Cards de formulario */
+.card-form {
+  background-color: white;
+  padding: 35px;
+  border-radius: 18px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.04);
+  border: 1px solid var(--beige);
+}
+
+.card-form h2 {
+  font-family: 'Cinzel', serif;
+  font-size: 1.6rem;
+  margin-bottom: 20px;
+  color: var(--acento);
+  border-bottom: 1px solid var(--rosado);
+  padding-bottom: 8px;
+}
+
+/* Inputs */
+input[type="text"],
+input[type="number"] {
+  width: 100%;
+  padding: 12px 14px;
+  margin-bottom: 20px;
+  border: 1.5px solid var(--beige);
+  border-radius: 12px;
+  font-size: 15px;
+  background-color: #fffdfd;
+  transition: border 0.3s ease, background 0.3s ease;
+}
+
+input[type="text"]:focus,
+input[type="number"]:focus {
+  border-color: var(--rosado);
+  outline: none;
+  background-color: #fef9f8;
+}
+
+/* Botones */
+input[type="submit"] {
+  background-color: var(--acento);
+  color: white;
+  font-weight: 500;
+  font-family: 'Inter', sans-serif;
+  border: none;
+  padding: 12px 18px;
+  font-size: 15px;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+input[type="submit"]:hover {
+  background-color: #000;
+  transform: scale(1.03);
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+  .banner-texto h1 {
+    font-size: 2.2rem;
+  }
+
+  .card-form {
+    padding: 25px;
+  }
+}
+.boton {
+    display: inline-block;
+    margin-top: 20px;
+    text-decoration: none;
+    background-color: var(--acento);
+    color: white;
+    padding: 10px 16px;
+    border-radius: 12px;
+    transition: all 0.3s ease;
+    font-family: 'Inter', sans-serif;
+  }
+  
+  .boton:hover {
+    background-color: #000;
+    transform: scale(1.03);
+  }
+  
+
